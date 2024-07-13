@@ -271,8 +271,45 @@ img{
 
 /*!  SHOP  */
 
+.carousel-item div p a{
+    text-decoration: none;
+    background-color: black;
+    color: rgb(197, 19, 19);
+    padding: 5px 10px 5px 10px;
+}
+
+.display-none h5{
+    color: rgb(22, 97, 128);
+    font-size: 1px;
+}
+
+.display-none p{
+    color: rgb(22, 97, 128);
+    font-size: 1px;
+}
+
+.display-none p a{
+    color: rgb(22, 97, 128);
+    text-decoration: none;
+    font-size: 1px;
+}
+
 .fondomain{
     background-color: rgb(22, 97, 128);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important
+    
+}
+
+main .carousel{
+    width: 800px;
+}
+
+main .carousel img{
+    width: 300px;
+    height: 100vh;
 }
 
 .shop{
@@ -420,6 +457,35 @@ img{
     .video{
         flex-direction: column;
     }
+    main .carousel{
+        width: 350px;
+    }
+
+    main .carousel img{
+        height: 400px;
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .display-none h5{
+        color: white;
+        font-size: 15px;
+    }
+    
+    .display-none p{
+        color: white;
+        font-size: 15px;
+    }
+    
+    .display-none p a{
+        text-decoration: none;
+        background-color: black;
+        color: rgb(197, 19, 19);
+        padding: 5px 10px 5px 10px;
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -433,6 +499,11 @@ img{
         "foto4"
         ;
         gap: 10px;
+    }
+
+    main .carousel img{
+        height: 300px;
+        width: 300px;
     }
 }
 

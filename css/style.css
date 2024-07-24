@@ -240,7 +240,6 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .pie-de-pagina p{
@@ -265,10 +264,23 @@ img{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 30px auto;
-    height: 495px;
+    padding: 60px auto;
+    height: auto;
 }
 
+.titulo-cont{
+    display: flex;
+    flex-direction: column;
+}
+
+.Flex-contactanos div{
+    display: flex;
+    flex-direction: column;
+}
+
+.Flex-contactanos form div{
+    margin: 8px;
+}
 /*!  SHOP  */
 
 .carousel-item div p a{
@@ -405,9 +417,16 @@ main .carousel img{
     background-color: crimson;
 }
 
+.titulosucursal{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .titulosucursal h1{
     padding: 0px 0px 20px 0px;
     color: white;
+    margin-top: 15px;
 }
 
 .titulosucursal p{
@@ -419,6 +438,9 @@ main .carousel img{
     padding: 40px 0px 40px 0px;
 }
 
+.maps iframe{
+    width: 600px;
+}
 
 
 @media screen and (max-width:1100px) {
@@ -450,6 +472,21 @@ main .carousel img{
     .cuerpo .tarjeta div img{
         width: 170px;
         height: 170px;
+    }
+
+    .maps iframe{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 890px){
+    .Flex-contactanos{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .flex-sucursal{
+        flex-direction: column;
     }
 }
 
@@ -505,6 +542,22 @@ main .carousel img{
         height: 300px;
         width: 300px;
     }
+
+    .titulo-cont{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulosucursal{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .tarjetanosotros{
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -517,5 +570,9 @@ main .carousel img{
     .login li a img{
         width: 40px;
         height: 40px;
+    }
+
+    .Flex-contactanos form{
+        width: 300px;
     }
 }

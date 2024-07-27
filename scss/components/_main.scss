@@ -35,7 +35,6 @@
     }
     .tarjeta{
         margin: 0px 0px 0px 0px;
-        display: flex;
         justify-content: space-around;
         display: grid;
         grid-template-columns: repeat(4, 300px);
@@ -173,10 +172,6 @@
     .titulo-cont{
         display: flex;
         flex-direction: column;
-        h1{
-        }
-        p{
-        }
     }
     form{
         div{
@@ -197,9 +192,7 @@
         flex-direction: column;
         margin: 0px 0px 25px 0px;
         padding-top: 10px;
-        h1{
-
-        }p{
+        p{
             padding: 10px;
         }
     }
@@ -214,15 +207,7 @@
             ul{
                 li{
                     list-style: none;
-                    a{
-                        img{
-
-                        }
-                    }
                 }
-            }
-            h2{
-
             }
             p{
                 text-decoration: underline;
@@ -251,11 +236,6 @@
     }
     .carousel{
         width: 800px;
-        div{
-            button{
-
-            }
-        }
         .carousel-inner{
             .carousel-item{
                 img{
@@ -263,9 +243,6 @@
                     height: 100vh;
                 }
                 div{
-                    h5{
-
-                    }
                     p{
                         a{
                             text-decoration: none;

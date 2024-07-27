@@ -144,7 +144,6 @@ img{
 
 .tarjeta{
     margin: 0px 0px 0px 0px;
-    display: flex;
     justify-content: space-around;
     display: grid;
     grid-template-columns: repeat(4, 300px);

@@ -166,6 +166,89 @@ body header .navbar {
     flex-direction: column;
     margin: 8px; }
 
+/*! NOSOTROS */
+.mainnosotros {
+  background-color: #bf82f8; }
+  .mainnosotros .h1nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 0px 25px 0px;
+    padding-top: 10px; }
+    .mainnosotros .h1nosotros p {
+      padding: 10px; }
+  .mainnosotros .tarjetanosotros {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .mainnosotros .tarjetanosotros div {
+      padding: 10px;
+      margin: 20px;
+      border: solid 3px black; }
+      .mainnosotros .tarjetanosotros div ul li {
+        list-style: none; }
+      .mainnosotros .tarjetanosotros div p {
+        text-decoration: underline; }
+
+/*! SHOP */
+.fondomain {
+  background-color: #166180;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center !important; }
+  .fondomain .h1shop {
+    display: flex;
+    justify-content: center;
+    color: red; }
+    .fondomain .h1shop h1 {
+      margin-top: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px; }
+  .fondomain .carousel {
+    width: 800px; }
+    .fondomain .carousel .carousel-inner .carousel-item img {
+      width: 300px;
+      height: 100vh; }
+    .fondomain .carousel .carousel-inner .carousel-item div p a {
+      text-decoration: none;
+      background-color: black;
+      color: #c51313;
+      padding: 5px 10px 5px 10px; }
+  .fondomain .display-none h5 {
+    color: #166180;
+    font-size: 1px; }
+  .fondomain .display-none p {
+    color: #166180;
+    font-size: 1px; }
+    .fondomain .display-none p a {
+      color: #166180;
+      text-decoration: none;
+      font-size: 1px; }
+
+/*! SUCURSAL */
+.flex-sucursal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: crimson; }
+  .flex-sucursal .titulosucursal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .flex-sucursal .titulosucursal h1 {
+      padding: 0px 0px 20px 0px;
+      color: white;
+      margin-top: 15px; }
+    .flex-sucursal .titulosucursal p {
+      padding: 20px 0pc 0pc 0pc;
+      color: #0fc99a; }
+  .flex-sucursal .maps {
+    padding: 40px 0px 40px 0px; }
+    .flex-sucursal .maps iframe {
+      width: 600px; }
+
 .pie-de-pagina {
   background-color: black;
   display: flex;
@@ -180,3 +263,83 @@ body header .navbar {
     font-weight: 200;
     font-style: normal;
     color: white; }
+
+@media screen and (max-width: 1100px) {
+  .tarjeta {
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: 300px 300px;
+    grid-template-areas: "foto1 foto2" "foto3 foto4";
+    gap: 10px; }
+  .primera-foto {
+    grid-area: foto1; }
+  .segunda-foto {
+    grid-area: foto2; }
+  .tercera-foto {
+    grid-area: foto3; }
+  .cuarta-foto {
+    grid-area: foto4; }
+  .cuerpo .tarjeta div img {
+    width: 170px;
+    height: 170px; }
+  .maps iframe {
+    width: 300px; } }
+
+@media screen and (max-width: 890px) {
+  .Flex-contactanos {
+    flex-direction: column;
+    height: auto; }
+  .flex-sucursal {
+    flex-direction: column; } }
+
+@media screen and (max-width: 820px) {
+  .video {
+    flex-direction: column; }
+  main .carousel {
+    width: 350px; }
+  main .carousel img {
+    height: 400px;
+    width: 400px; } }
+
+@media screen and (max-width: 767px) {
+  .display-none h5 {
+    color: white;
+    font-size: 15px; }
+  .display-none p {
+    color: white;
+    font-size: 15px; }
+  .display-none p a {
+    text-decoration: none;
+    background-color: black;
+    color: #c51313;
+    padding: 5px 10px 5px 10px;
+    font-size: 15px; } }
+
+@media screen and (max-width: 600px) {
+  .tarjeta {
+    grid-template-columns: 300px;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-areas: "foto1" "foto2" "foto3" "foto4";
+    gap: 10px; }
+  main .carousel img {
+    height: 300px;
+    width: 300px; }
+  .titulo-cont {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .titulosucursal {
+    align-items: center; } }
+
+@media screen and (max-width: 500px) {
+  .tarjetanosotros {
+    flex-direction: column; } }
+
+@media screen and (max-width: 480px) {
+  .video div iframe {
+    width: 300px;
+    height: 300px; }
+  .login li a img {
+    width: 40px;
+    height: 40px; }
+  .Flex-contactanos form {
+    width: 300px; } }

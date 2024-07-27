@@ -1,0 +1,188 @@
+/*! INDEX */
+.cuerpo{
+    background-color: rgba(15, 201, 154, 0.596);
+    background-attachment: fixed;
+    .login{
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        list-style: none;
+        li{
+            a{
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0px 0px 20px 0px;
+        h1{
+            display: inline;
+            justify-content: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: 300;
+        }
+        p{
+            margin-top: 10px;
+        }
+    }
+    .tarjeta{
+        margin: 0px 0px 0px 0px;
+        display: flex;
+        justify-content: space-around;
+        display: grid;
+        grid-template-columns: repeat(4, 300px);
+        grid-template-rows: 300px;
+        grid-template-areas: 
+        "foto1 foto2 foto3 foto4"
+        ;
+        .primera-foto{
+            grid-area: foto1;
+            display: inline-block;
+            margin-left: 40px;
+            margin-right: 40px;
+            border: solid 3px rgb(28, 13, 167);
+            padding: 20px;
+            img{
+                width: 170px;
+                height: 170px;
+            }
+            h2{
+                color: rgb(89, 74, 224);
+            }
+            p{
+                background-color: black;
+                a{
+                    text-decoration: none;
+                    color: #f4f4f4;
+                    justify-content: center;
+                    padding: 30px;
+                }
+            }
+        }
+        .segunda-foto{
+            grid-area: foto2;
+            display: inline-block;
+            margin-left: 40px;
+            margin-right: 40px;
+            border: solid 3px rgb(28, 13, 167);
+            padding: 20px;
+            img{
+                width: 170px;
+                height: 170px;
+            }
+            h2{
+                color: rgb(89, 74, 224);
+            }
+            p{
+                background-color: black;
+                a{
+                    text-decoration: none;
+                    color: #f4f4f4;
+                    justify-content: center;
+                    padding: 30px;
+                }
+            }
+        }
+        .tercera-foto{
+            grid-area: foto3;
+            display: inline-block;
+            margin-left: 40px;
+            margin-right: 40px;
+            border: solid 3px rgb(28, 13, 167);
+            padding: 20px;
+            img{
+                width: 170px;
+                height: 170px;
+            }
+            h2{
+                color: rgb(89, 74, 224);
+            }
+            p{
+                background-color: black;
+                a{
+                    text-decoration: none;
+                    color: #f4f4f4;
+                    justify-content: center;
+                    padding: 30px;
+                }
+            }
+        }
+        .cuarta-foto{
+            grid-area: foto4;
+            display: inline-block;
+            margin-left: 40px;
+            margin-right: 40px;
+            border: solid 3px rgb(28, 13, 167);
+            padding: 20px;
+            img{
+                width: 170px;
+                height: 170px;
+            }
+            h2{
+                color: rgb(89, 74, 224);
+            }
+            p{
+                background-color: black;
+                a{
+                    text-decoration: none;
+                    color: #f4f4f4;
+                    justify-content: center;
+                    padding: 30px;
+                }
+            }
+        }
+    }
+    .video{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 20px;
+        .flex-videou{
+            p{
+            background-color: rgb(15, 124, 124);
+            color: black;
+            border: solid 3px white;
+            }
+        }
+        .flex-videou{
+            .videaco{
+                width: 400px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+/*! CONTACTOS */
+
+.Flex-contactanos{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 60px auto;
+    height: auto;
+    .titulo-cont{
+        display: flex;
+        flex-direction: column;
+        h1{
+        }
+        p{
+        }
+    }
+    form{
+        div{
+            display: flex;
+            flex-direction: column;
+            margin: 8px;
+        }
+    }
+}

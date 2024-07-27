@@ -116,18 +116,18 @@ img{
     background-attachment: fixed;
 }
 
-.cuerpo section h1{
+.cuerpo .titulo h1{
     display: inline;
     justify-content: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 300;
 }
 
-.cuerpo div{
+/*.cuerpo div{
     display: inline-block;
     margin-left: 40px;
     margin-right: 40px;    
-}
+}*/
 
 .titulo{
     display: flex;
@@ -136,7 +136,6 @@ img{
     align-items: center;
     text-align: center;
     margin: 0px 0px 20px 0px;
-
 }
 
 .titulo p{  
@@ -157,24 +156,43 @@ img{
 
 .primera-foto{
     grid-area: foto1;
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: solid 3px rgb(28, 13, 167);
+    padding: 20px;
 }
 
 .segunda-foto{
     grid-area: foto2;
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: solid 3px rgb(28, 13, 167);
+    padding: 20px;
 }
 
 .tercera-foto{
     grid-area: foto3;
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;border: solid 3px rgb(28, 13, 167);
+    padding: 20px;
 }
 
 .cuarta-foto{
     grid-area: foto4;
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: solid 3px rgb(28, 13, 167);
+    padding: 20px; 
 }
 
-.tarjeta div{
+/*.tarjeta div{
     border: solid 3px rgb(28, 13, 167);
     padding: 20px;
-}
+}*/
 
 .tarjeta a{
     text-decoration: none;
@@ -281,6 +299,7 @@ img{
 .Flex-contactanos form div{
     margin: 8px;
 }
+
 /*!  SHOP  */
 
 .carousel-item div p a{

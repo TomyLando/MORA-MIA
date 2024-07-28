@@ -47,14 +47,19 @@
             display: inline-block;
             margin-left: 40px;
             margin-right: 40px;
-            border: solid 3px rgb(28, 13, 167);
+            border: solid nth($border-solid, 3) rgb(0, 0, 0);
             padding: 20px;
+            transition: 1s;
+            &:hover{
+                background-color: blue;
+                transform: scale(1.1);
+            }
             img{
                 width: 170px;
                 height: 170px;
             }
             h2{
-                color: rgb(89, 74, 224);
+                color: $colorh2;
             }
             p{
                 background-color: black;
@@ -71,14 +76,19 @@
             display: inline-block;
             margin-left: 40px;
             margin-right: 40px;
-            border: solid 3px rgb(28, 13, 167);
+            border: solid nth($border-solid, 3) rgb(0, 0, 0);
             padding: 20px;
+            transition: 1s;
+            &:hover{
+                background-color: blue;
+                transform: scale(1.1);
+            }
             img{
                 width: 170px;
                 height: 170px;
             }
             h2{
-                color: rgb(89, 74, 224);
+                color: $colorh2;
             }
             p{
                 background-color: black;
@@ -95,14 +105,19 @@
             display: inline-block;
             margin-left: 40px;
             margin-right: 40px;
-            border: solid 3px rgb(28, 13, 167);
+            border: solid nth($border-solid, 3) rgb(0, 0, 0);
             padding: 20px;
+            transition: 1s;
+            &:hover{
+                background-color: blue;
+                transform: scale(1.1);
+            }
             img{
                 width: 170px;
                 height: 170px;
             }
             h2{
-                color: rgb(89, 74, 224);
+                color: $colorh2;
             }
             p{
                 background-color: black;
@@ -119,14 +134,19 @@
             display: inline-block;
             margin-left: 40px;
             margin-right: 40px;
-            border: solid 3px rgb(28, 13, 167);
+            border: solid nth($border-solid, 3) rgb(0, 0, 0);
             padding: 20px;
+            transition: 1s;
+            &:hover{
+                background-color: blue;
+                transform: scale(1.1);
+            }
             img{
                 width: 170px;
                 height: 170px;
             }
             h2{
-                color: rgb(89, 74, 224);
+                color: $colorh2;
             }
             p{
                 background-color: black;
@@ -140,16 +160,15 @@
         }
     }
     .video{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        @include flextend (flex, space-evenly, center);
         margin-top: 20px;
         .flex-videou{
             p{
             background-color: rgb(15, 124, 124);
             color: black;
-            border: solid 3px white;
+            border: solid nth($border-solid, 2) white;
             }
+
         }
         .flex-videou{
             .videaco{
@@ -164,9 +183,7 @@
 
 .Flex-contactanos{
     background-color: aquamarine;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    @extend %flextend;
     padding: 60px auto;
     height: auto;
     .titulo-cont{
@@ -275,9 +292,7 @@
 
 /*! SUCURSAL */
 .flex-sucursal{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flextend (flex, space-around, center);
     background-color: crimson;
     .titulosucursal{
         display: flex;

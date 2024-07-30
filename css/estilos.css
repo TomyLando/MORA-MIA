@@ -31,46 +31,46 @@ body header .navbar {
     width: 50px;
     height: 50px;
     border-radius: 50%; }
-  body header .navbar div div ul li .hovera {
+  body header .navbar div div ul li a {
     margin: 0px 10px 0px 0px;
     transition: 1s; }
-    body header .navbar div div ul li .hovera:hover {
+    body header .navbar div div ul li a:hover {
       color: #8f0f0f !important; }
 
 /*! INDEX */
-.cuerpo {
+main {
   background-color: rgba(15, 201, 154, 0.596);
   background-attachment: fixed; }
-  .cuerpo .login {
+  main .login {
     position: fixed;
     bottom: 30px;
     right: 30px;
     list-style: none; }
-    .cuerpo .login li a img {
+    main .login li a img {
       width: 50px;
       height: 50px; }
-  .cuerpo .titulo {
+  main .titulo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 0px 0px 20px 0px; }
-    .cuerpo .titulo h1 {
+    main .titulo h1 {
       display: inline;
       justify-content: center;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       font-weight: 300; }
-    .cuerpo .titulo p {
+    main .titulo p {
       margin-top: 10px; }
-  .cuerpo .tarjeta {
+  main .tarjeta {
     margin: 0px 0px 0px 0px;
     justify-content: space-around;
     display: grid;
     grid-template-columns: repeat(4, 300px);
     grid-template-rows: 300px;
     grid-template-areas: "foto1 foto2 foto3 foto4"; }
-    .cuerpo .tarjeta .primera-foto {
+    main .tarjeta .primera-foto {
       grid-area: foto1;
       display: inline-block;
       margin-left: 40px;
@@ -78,22 +78,22 @@ body header .navbar {
       border: solid 4px black;
       padding: 20px;
       transition: 1s; }
-      .cuerpo .tarjeta .primera-foto:hover {
+      main .tarjeta .primera-foto:hover {
         background-color: blue;
         transform: scale(1.1); }
-      .cuerpo .tarjeta .primera-foto img {
+      main .tarjeta .primera-foto img {
         width: 170px;
         height: 170px; }
-      .cuerpo .tarjeta .primera-foto h2 {
+      main .tarjeta .primera-foto h2 {
         color: #be1616; }
-      .cuerpo .tarjeta .primera-foto p {
+      main .tarjeta .primera-foto p {
         background-color: black; }
-        .cuerpo .tarjeta .primera-foto p a {
+        main .tarjeta .primera-foto p a {
           text-decoration: none;
           color: #f4f4f4;
           justify-content: center;
           padding: 30px; }
-    .cuerpo .tarjeta .segunda-foto {
+    main .tarjeta .segunda-foto {
       grid-area: foto2;
       display: inline-block;
       margin-left: 40px;
@@ -101,22 +101,22 @@ body header .navbar {
       border: solid 4px black;
       padding: 20px;
       transition: 1s; }
-      .cuerpo .tarjeta .segunda-foto:hover {
+      main .tarjeta .segunda-foto:hover {
         background-color: blue;
         transform: scale(1.1); }
-      .cuerpo .tarjeta .segunda-foto img {
+      main .tarjeta .segunda-foto img {
         width: 170px;
         height: 170px; }
-      .cuerpo .tarjeta .segunda-foto h2 {
+      main .tarjeta .segunda-foto h2 {
         color: #be1616; }
-      .cuerpo .tarjeta .segunda-foto p {
+      main .tarjeta .segunda-foto p {
         background-color: black; }
-        .cuerpo .tarjeta .segunda-foto p a {
+        main .tarjeta .segunda-foto p a {
           text-decoration: none;
           color: #f4f4f4;
           justify-content: center;
           padding: 30px; }
-    .cuerpo .tarjeta .tercera-foto {
+    main .tarjeta .tercera-foto {
       grid-area: foto3;
       display: inline-block;
       margin-left: 40px;
@@ -124,22 +124,22 @@ body header .navbar {
       border: solid 4px black;
       padding: 20px;
       transition: 1s; }
-      .cuerpo .tarjeta .tercera-foto:hover {
+      main .tarjeta .tercera-foto:hover {
         background-color: blue;
         transform: scale(1.1); }
-      .cuerpo .tarjeta .tercera-foto img {
+      main .tarjeta .tercera-foto img {
         width: 170px;
         height: 170px; }
-      .cuerpo .tarjeta .tercera-foto h2 {
+      main .tarjeta .tercera-foto h2 {
         color: #be1616; }
-      .cuerpo .tarjeta .tercera-foto p {
+      main .tarjeta .tercera-foto p {
         background-color: black; }
-        .cuerpo .tarjeta .tercera-foto p a {
+        main .tarjeta .tercera-foto p a {
           text-decoration: none;
           color: #f4f4f4;
           justify-content: center;
           padding: 30px; }
-    .cuerpo .tarjeta .cuarta-foto {
+    main .tarjeta .cuarta-foto {
       grid-area: foto4;
       display: inline-block;
       margin-left: 40px;
@@ -147,31 +147,31 @@ body header .navbar {
       border: solid 4px black;
       padding: 20px;
       transition: 1s; }
-      .cuerpo .tarjeta .cuarta-foto:hover {
+      main .tarjeta .cuarta-foto:hover {
         background-color: blue;
         transform: scale(1.1); }
-      .cuerpo .tarjeta .cuarta-foto img {
+      main .tarjeta .cuarta-foto img {
         width: 170px;
         height: 170px; }
-      .cuerpo .tarjeta .cuarta-foto h2 {
+      main .tarjeta .cuarta-foto h2 {
         color: #be1616; }
-      .cuerpo .tarjeta .cuarta-foto p {
+      main .tarjeta .cuarta-foto p {
         background-color: black; }
-        .cuerpo .tarjeta .cuarta-foto p a {
+        main .tarjeta .cuarta-foto p a {
           text-decoration: none;
           color: #f4f4f4;
           justify-content: center;
           padding: 30px; }
-  .cuerpo .video {
+  main .video {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 20px; }
-    .cuerpo .video .flex-videou p {
+    main .video .flex-videou p {
       background-color: #0f7c7c;
       color: black;
       border: solid 3px white; }
-    .cuerpo .video .flex-videou .videaco {
+    main .video .flex-videou .videaco {
       width: 400px;
       height: 400px; }
 

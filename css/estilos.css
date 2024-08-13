@@ -33,147 +33,168 @@ body header .navbar {
     border-radius: 50%; }
   body header .navbar div div ul li a {
     margin: 0px 10px 0px 0px;
+    color: white !important;
     transition: 1s; }
     body header .navbar div div ul li a:hover {
       color: #8f0f0f !important; }
 
 /*! INDEX */
-main {
-  background-color: rgba(15, 201, 154, 0.596);
-  background-attachment: fixed; }
-  main .login {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    list-style: none; }
-    main .login li a img {
-      width: 50px;
-      height: 50px; }
-  main .titulo {
+main .login {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  list-style: none; }
+  main .login li a img {
+    width: 50px;
+    height: 50px; }
+
+main .cont-principal {
+  background-image: url(../img/fondo-index.jpg);
+  background-attachment: fixed;
+  background-position: center; }
+  main .cont-principal .titulo {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0px 0px 20px 0px; }
-    main .titulo h1 {
-      display: inline;
+    margin: 0px 0px 20px 0px;
+    padding-top: 20px; }
+    main .cont-principal .titulo div {
+      border: solid 4px white;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      font-weight: 300; }
-    main .titulo p {
-      margin-top: 10px; }
-  main .tarjeta {
+      align-items: center;
+      text-align: center;
+      width: 80%; }
+      main .cont-principal .titulo div h1 {
+        display: inline;
+        justify-content: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 300;
+        color: white;
+        padding-top: 10px; }
+      main .cont-principal .titulo div p {
+        margin-top: 10px;
+        color: white; }
+  main .cont-principal .tarjeta {
     margin: 0px 0px 0px 0px;
     justify-content: space-around;
+    padding-bottom: 10px;
     display: grid;
     grid-template-columns: repeat(4, 300px);
     grid-template-rows: 300px;
     grid-template-areas: "foto1 foto2 foto3 foto4"; }
-    main .tarjeta .primera-foto {
+    main .cont-principal .tarjeta .primera-foto {
       grid-area: foto1;
       display: inline-block;
       margin-left: 40px;
       margin-right: 40px;
-      border: solid 4px black;
+      border: solid 4px #08385f;
       padding: 20px;
       transition: 1s; }
-      main .tarjeta .primera-foto:hover {
-        background-color: blue;
+      main .cont-principal .tarjeta .primera-foto:hover {
+        background-color: #5252e4;
         transform: scale(1.1); }
-      main .tarjeta .primera-foto img {
+      main .cont-principal .tarjeta .primera-foto img {
         width: 170px;
         height: 170px; }
-      main .tarjeta .primera-foto h2 {
-        color: #be1616; }
-      main .tarjeta .primera-foto p {
+      main .cont-principal .tarjeta .primera-foto h2 {
+        color: white; }
+      main .cont-principal .tarjeta .primera-foto p {
         background-color: black; }
-        main .tarjeta .primera-foto p a {
+        main .cont-principal .tarjeta .primera-foto p a {
           text-decoration: none;
           color: #f4f4f4;
           justify-content: center;
           padding: 30px; }
-    main .tarjeta .segunda-foto {
+    main .cont-principal .tarjeta .segunda-foto {
       grid-area: foto2;
       display: inline-block;
       margin-left: 40px;
       margin-right: 40px;
-      border: solid 4px black;
+      border: solid 4px #08385f;
       padding: 20px;
       transition: 1s; }
-      main .tarjeta .segunda-foto:hover {
-        background-color: blue;
+      main .cont-principal .tarjeta .segunda-foto:hover {
+        background-color: #5252e4;
         transform: scale(1.1); }
-      main .tarjeta .segunda-foto img {
+      main .cont-principal .tarjeta .segunda-foto img {
         width: 170px;
         height: 170px; }
-      main .tarjeta .segunda-foto h2 {
-        color: #be1616; }
-      main .tarjeta .segunda-foto p {
+      main .cont-principal .tarjeta .segunda-foto h2 {
+        color: white; }
+      main .cont-principal .tarjeta .segunda-foto p {
         background-color: black; }
-        main .tarjeta .segunda-foto p a {
+        main .cont-principal .tarjeta .segunda-foto p a {
           text-decoration: none;
           color: #f4f4f4;
           justify-content: center;
           padding: 30px; }
-    main .tarjeta .tercera-foto {
+    main .cont-principal .tarjeta .tercera-foto {
       grid-area: foto3;
       display: inline-block;
       margin-left: 40px;
       margin-right: 40px;
-      border: solid 4px black;
+      border: solid 4px #08385f;
       padding: 20px;
       transition: 1s; }
-      main .tarjeta .tercera-foto:hover {
-        background-color: blue;
+      main .cont-principal .tarjeta .tercera-foto:hover {
+        background-color: #5252e4;
         transform: scale(1.1); }
-      main .tarjeta .tercera-foto img {
+      main .cont-principal .tarjeta .tercera-foto img {
         width: 170px;
         height: 170px; }
-      main .tarjeta .tercera-foto h2 {
-        color: #be1616; }
-      main .tarjeta .tercera-foto p {
+      main .cont-principal .tarjeta .tercera-foto h2 {
+        color: white; }
+      main .cont-principal .tarjeta .tercera-foto p {
         background-color: black; }
-        main .tarjeta .tercera-foto p a {
+        main .cont-principal .tarjeta .tercera-foto p a {
           text-decoration: none;
           color: #f4f4f4;
           justify-content: center;
           padding: 30px; }
-    main .tarjeta .cuarta-foto {
+    main .cont-principal .tarjeta .cuarta-foto {
       grid-area: foto4;
       display: inline-block;
       margin-left: 40px;
       margin-right: 40px;
-      border: solid 4px black;
+      border: solid 4px #08385f;
       padding: 20px;
       transition: 1s; }
-      main .tarjeta .cuarta-foto:hover {
-        background-color: blue;
+      main .cont-principal .tarjeta .cuarta-foto:hover {
+        background-color: #5252e4;
         transform: scale(1.1); }
-      main .tarjeta .cuarta-foto img {
+      main .cont-principal .tarjeta .cuarta-foto img {
         width: 170px;
         height: 170px; }
-      main .tarjeta .cuarta-foto h2 {
-        color: #be1616; }
-      main .tarjeta .cuarta-foto p {
+      main .cont-principal .tarjeta .cuarta-foto h2 {
+        color: white; }
+      main .cont-principal .tarjeta .cuarta-foto p {
         background-color: black; }
-        main .tarjeta .cuarta-foto p a {
+        main .cont-principal .tarjeta .cuarta-foto p a {
           text-decoration: none;
           color: #f4f4f4;
           justify-content: center;
           padding: 30px; }
-  main .video {
+
+main .cont-video {
+  background-color: black; }
+  main .cont-video .video {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 20px; }
-    main .video .flex-videou p {
+    padding-top: 20px; }
+    main .cont-video .video .flex-videou p {
       background-color: #0f7c7c;
-      color: black;
-      border: solid 3px white; }
-    main .video .flex-videou .videaco {
+      color: rgba(0, 0, 0, 0.562);
+      border: solid 3px white;
+      width: 80%;
+      padding-left: 25px;
+      margin-left: 30px; }
+    main .cont-video .video .flex-videou .videaco {
       width: 400px;
-      height: 400px; }
+      height: 400px;
+      padding-top: 15px;
+      padding-bottom: 15px; }
 
 /*! CONTACTOS */
 .Flex-contactanos {
@@ -204,13 +225,28 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center; }
-    .mainnosotros .tarjetanosotros div {
+    .mainnosotros .tarjetanosotros .centrar-nonsotros {
       padding: 10px;
       margin: 20px;
-      border: solid 3px black; }
-      .mainnosotros .tarjetanosotros div ul li {
+      border: solid 3px black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .mainnosotros .tarjetanosotros .centrar-nonsotros ul li {
         list-style: none; }
-      .mainnosotros .tarjetanosotros div p {
+        .mainnosotros .tarjetanosotros .centrar-nonsotros ul li .logo-wpp {
+          padding-right: 22px;
+          height: 20vh; }
+        .mainnosotros .tarjetanosotros .centrar-nonsotros ul li a .logo-insta {
+          padding-right: 20px;
+          padding-top: 17px; }
+        .mainnosotros .tarjetanosotros .centrar-nonsotros ul li a .logo-face {
+          padding-right: 21px; }
+        .mainnosotros .tarjetanosotros .centrar-nonsotros ul li a .logo-telegram {
+          padding-right: 26px;
+          width: 160px; }
+      .mainnosotros .tarjetanosotros .centrar-nonsotros p {
         text-decoration: underline; }
 
 /*! SHOP */

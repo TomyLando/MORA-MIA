@@ -24,7 +24,6 @@ while (true) {
         if (isNaN(numero_a_multiplicar)) {
 
             alert("ingresa el numero en digitos y no en letras porfavor")
-            continue
         }
 
         else {
@@ -36,13 +35,13 @@ while (true) {
 
         }
     }
+    
     else {
         if (confirm("¿desea hacer el promedio de alumnos?")) {
             let aulas = Number(prompt("ingrese la cantidad de aulas que hay"))
             let suma_alumnos = 0
             if (isNaN(aulas)) {
                 alert("ingresa el numero endigitos y no en letras porfavor")
-                continue
             }
             else {
                 for (let i = 1; i <= aulas; i++) {

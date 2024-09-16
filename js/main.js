@@ -1,73 +1,65 @@
+let usuario = prompt("ingrese su nombre");
+let dia = prompt("¿Como le va en su dia?")
+let apellido = prompt("ingrese su apellido");
+let edad = Number(prompt("ingrese su edad"));
 
-// Armar un sistema donde el usuario
-//      Tenga acceso a dos funciones diferentes
-//          Calcular promedio de alumnos
-//          Obtener la tabla de multiplicar de un número x
-//      Cuando el usuario lo desee, pueda salir del sistema
+let datos = {
+    usuario,
+    apellido,
+    edad   
+}
 
+function objeto(){
+    console.log("buenas, estos son sus datos:")
+    console.log(datos.usuario);
+    console.log(datos.apellido);
+    console.log(datos.edad);
 
-// Un sistema donde el usuario ELIGE salir es lo que se llama un sistema perpetuo
-// Es decir que vamos a obligar al usuario a que este dentro de un bucle de forma
-// indefinida hasta que el decida salir
+}
 
-// Lo ideal es que entremos al bucle DE UNA
 while (true) {
 
-    // Le preguntamos al usuario que quiere hacer
-    //      Calcular el promedio de alumnos
-    //      Obtener la tabla de multiplicar de un numero
+    let opcion = Number(prompt("ponga 1 si quiere multiplicar \nponga 2 si quiere hacer el promedio"));
     
-    if (confirm("¿desea hacer una multiplicacion?")) {
+    if (opcion == 1) {
+        
+        objeto()
+        
+        let numero = Number(prompt("¿Que numero desea multiplicar?"));
 
-        let numero_a_multiplicar = Number(prompt("escriba el numero que quiera multiplicar"))
-
-        if (isNaN(numero_a_multiplicar)) {
-
-            alert("ingresa el numero en digitos y no en letras porfavor")
+        while (isNaN(numero)) {
+            alert("ingrese un numero porfavor y no se haga el chistozo")
+            numero = Number(prompt("¿Que numero desea multiplicar?"));
         }
 
-        else {
+        for (let i = 1; i <= 10; i++) {
 
-            for (let i = 0; i <= 10; i++) {
-                console.log(numero_a_multiplicar, "x", i, "=", (numero_a_multiplicar * i))
-                console.log("---------------------------------")
-            }
-
+            let resultado = (numero + " x " + i + " = " + (i * numero))
+            console.log(resultado)
+        
         }
     }
-    
-    else {
-        if (confirm("¿desea hacer el promedio de alumnos?")) {
-            let aulas = Number(prompt("ingrese la cantidad de aulas que hay"))
-            let suma_alumnos = 0
-            if (isNaN(aulas)) {
-                alert("ingresa el numero endigitos y no en letras porfavor")
-            }
-            else {
-                for (let i = 1; i <= aulas; i++) {
-                    let alumnos = Number(prompt("ingrese la cantidad de alumnos que hay en el aula ", i))
-                    suma_alumnos = suma_alumnos + alumnos
-    
-                }
-                let promedio_alumnos = suma_alumnos / aulas
-                console.log("la cantidad de alumnos que hay es de ", suma_alumnos, " y la cantidad de aulas es de ", aulas, " , entonces el promedio es de un total de ", promedio_alumnos)
-                console.log("----------------------------------")
-            }
+    else if (opcion == 2) {
+        objeto()
+        let aulas = Number(prompt("ingrese la cantidad de aulas que hay en su colegio"));
+        let suma = 0
+        for (let i = 1; i <= aulas; i++) {
+            let alumnos = Number(prompt("ingrese la cantidad de alumnos que hay en el aula " + i));
+            suma = suma + alumnos
         }
+        promedio = Math.round(suma / aulas)
+        console.log("este es su promedio " + promedio)
+    }
+    else{
+        alert("no se haga el chistoso que se donde vive❤️")
+        continue
     }
 
-
-
-    // Debemos preguntarle al usuario si quiere salir (siempre siempre de alguna forma necesitamos salir del bucle)
     let salir = confirm('Desea salir del sistema?')
 
-    // Debemos condicionar la respuesta del usuario
-    // El usuario quiere salir? [true/false]
     if (salir) {
         console.log("usted a salido con exito del programa")
         break
     }
-
-    // Como no podemos cambiar la condicion del while, que sentencia usarias para salir del bucle?
 
 }
